@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a Básica Locadora de Veículos e solicite informações sobre carros e serviços extras.">
+  <title>Básica Locadora de Veículos</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <p class="marca">BÁSICA</p>
+      <h1>Seu caminho começa com o carro certo</h1>
+      <p>Encontre uma opção prática para viajar, trabalhar ou aproveitar o dia a dia.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cartao" aria-labelledby="sobre-titulo">
+      <h2 id="sobre-titulo">Sobre a Básica Locadora</h2>
+      <img
+        src="imagens/carros.jpg"
+        alt="Fileiras de carros disponíveis para locação em um pátio iluminado pelo sol."
+        class="foto-destaque"
+      >
+      <p>A Básica Locadora de Veículos oferece opções práticas para quem precisa alugar um carro. Escolha o tipo de veículo e os serviços extras que combinam com sua necessidade.</p>
+
+      <h3>Por que escolher a Básica?</h3>
+      <ul class="destaques">
+        <li>Opções para viagens, trabalho e uso diário</li>
+        <li>Pedido simples e atendimento acolhedor</li>
+        <li>Serviços extras para uma viagem mais confortável</li>
+      </ul>
+
+      <form action="#" method="get">
+        <h2>Faça seu pedido</h2>
+        <p class="aviso">Preencha seus dados e indique suas preferências. Os campos com * são obrigatórios.</p>
+
+        <div class="campo">
+          <label for="nome-usuario">Seu nome: <span aria-hidden="true">*</span></label>
+          <input type="text" id="nome-usuario" name="nome" minlength="3" required autocomplete="name" aria-describedby="dica-nome">
+          <small id="dica-nome">Digite pelo menos 3 caracteres.</small>
+        </div>
+
+        <div class="campo">
+          <label for="email-usuario">Seu e-mail: <span aria-hidden="true">*</span></label>
+          <input type="email" id="email-usuario" name="email" required autocomplete="email" placeholder="voce@exemplo.com">
+        </div>
+
+        <fieldset>
+          <legend>Escolha o tipo de veículo</legend>
+          <label class="opcao"><input type="radio" name="veiculo" value="comercial" required> Carro comercial</label>
+          <label class="opcao"><input type="radio" name="veiculo" value="suv"> SUV</label>
+          <label class="opcao"><input type="radio" name="veiculo" value="utilitario"> Utilitário</label>
+          <label class="opcao"><input type="radio" name="veiculo" value="luxo"> Luxo</label>
+          <label class="opcao"><input type="radio" name="veiculo" value="eletrico"> Elétrico</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Serviços extras (opcionais)</legend>
+          <label class="opcao"><input type="checkbox" name="extras" value="cadeirinha"> Cadeirinha infantil</label>
+          <label class="opcao"><input type="checkbox" name="extras" value="gps"> GPS</label>
+          <label class="opcao"><input type="checkbox" name="extras" value="automatico"> Câmbio automático</label>
+          <label class="opcao"><input type="checkbox" name="extras" value="teto-solar"> Teto solar</label>
+        </fieldset>
+
+        <button type="submit">Enviar pedido</button>
+        <p class="nota-envio">Demonstração: este formulário ainda não envia os dados para uma locadora.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Exercício de revisão — Básica Locadora de Veículos - Daniel Felix 2026</p>
+  </footer>
+</body>
+</html>
